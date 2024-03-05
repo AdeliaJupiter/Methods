@@ -1,4 +1,6 @@
-﻿namespace Methods
+﻿using System.Net.Http.Headers;
+
+namespace Methods
 {
     class Program
     {
@@ -82,27 +84,51 @@
 
         //--------MATH METHODS----------
         //Addition Method
-        public static int Add(int x, int y)
+        public static int Add(params int[] list)
         {
-            return x + y;
+            int sum = 0;
+
+            for (int i = 0; i < list.Length; i++)
+            {
+                sum = sum + list[i];
+            }
+            return sum;
         }
 
         //Subtraction Method
-        public static int Sub(int x, int y)
+        public static int Sub(params int[] list)
         {
-            return x - y;
+            int diff = 0;
+
+            for (int i=0; i < list.Length; i++)
+            {
+                diff = diff - list[i];
+            }
+            return diff;
         }
 
         //Multiplication Method
-        public static int Mul(int x, int y)
+        public static int Mul(params int[] list)
         {
-            return x * y;
+            int prod = 0;
+
+            for (int i = 0; i < list.Length ; i++)
+            {
+                prod = prod * list[i];
+            }
+            return prod;
         }
 
         //Division Method
-        public static int Div(int x, int y)
+        public static int Div(params int[] list)
         {
-            return x / y;
+            int quot = 0;
+
+            for (int i = 0 ; i < list.Length ; i++)
+            {
+                quot = quot / list[i];
+            }
+            return quot;
         }
     }
     }
