@@ -131,5 +131,5 @@ namespace Methods
             return quot;
         }
     }
-    }
+    
 }
