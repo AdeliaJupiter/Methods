@@ -8,7 +8,7 @@ namespace Methods
         {
             //-------------------------USER STORY-------------------------
             //Declare variables
-            string userName;
+            /*string userName;
             string favoriteAnimal;
             string favoriteColor;
             string favoriteBand;
@@ -28,7 +28,7 @@ namespace Methods
 
             //Storytime!
             Console.WriteLine($"There once was a kid named {userName}. They lived in a fairytale land with their talking {favoriteColor} {favoriteAnimal}.");
-            Console.WriteLine($"They loved to go on adventures, but when {userName} heard {favoriteBand} floating in from the sky, {userName} knew that they had to wake up.");
+            Console.WriteLine($"They loved to go on adventures, but when {userName} heard {favoriteBand} floating in from the sky, {userName} knew that they had to wake up.");*/
 
             //--------------------------MATH---------------------------------
             //Declare variables
@@ -86,9 +86,9 @@ namespace Methods
         //Addition Method
         public static int Add(params int[] list)
         {
-            int sum = 0;
+            int sum = list[0];
 
-            for (int i = 0; i < list.Length; i++)
+            for (int i = 1; i < list.Length; i++)
             {
                 sum = sum + list[i];
             }
@@ -98,9 +98,9 @@ namespace Methods
         //Subtraction Method
         public static int Sub(params int[] list)
         {
-            int diff = 0;
+            int diff = list[0];
 
-            for (int i=0; i < list.Length; i++)
+            for (int i=1; i < list.Length; i++)
             {
                 diff = diff - list[i];
             }
@@ -110,9 +110,9 @@ namespace Methods
         //Multiplication Method
         public static int Mul(params int[] list)
         {
-            int prod = 0;
+            int prod = list[0];
 
-            for (int i = 0; i < list.Length ; i++)
+            for (int i = 1; i < list.Length ; i++)
             {
                 prod = prod * list[i];
             }
@@ -122,9 +122,9 @@ namespace Methods
         //Division Method
         public static int Div(params int[] list)
         {
-            int quot = 0;
+            int quot = list[0];
 
-            for (int i = 0 ; i < list.Length ; i++)
+            for (int i = 1 ; i < list.Length ; i++)
             {
                 quot = quot / list[i];
             }
